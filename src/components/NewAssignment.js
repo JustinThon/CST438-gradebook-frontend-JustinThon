@@ -21,8 +21,6 @@ class NewAssignment extends React.Component {
     
     };
 
-    
-
     addAssignment = (assignment) => {
         const token = Cookies.get('XSRF-TOKEN');
 
@@ -73,8 +71,6 @@ class NewAssignment extends React.Component {
         this.addAssignment({assignmentName: this.state.AssignmentName, courseId:this.state.courseId, dueDate:this.state.DueDate})
     }
 
-
-  
     render() {
         return (
             <div>
@@ -85,8 +81,8 @@ class NewAssignment extends React.Component {
                         <TextField label="Due Date" name="duedate"  onChange={this.setDueDate}/>   
                     <br></br>     
                     <Button id="Add"  component={Link} to={{pathname:'/'}} variant="outlined" style={{margin: 20}} color="primary" onClick= {this.setAdd}>
-                        Add Assignment</Button>
-                    
+                        New Assignment</Button>
+        
                     <Button component={Link} to={{pathname:'/'}} 
                     variant="outlined" color="primary" style={{margin: 10}}>
                     Cancel</Button>
