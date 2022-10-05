@@ -81,8 +81,9 @@ class NewAssignment extends React.Component {
                         <TextField label="Due Date" name="duedate"  onChange={this.setDueDate}/>   
                     <br></br>     
                     <Button id="Add"  component={Link} to={{pathname:'/'}} variant="outlined" style={{margin: 20}} color="primary" onClick= {this.setAdd}>
-                        New Assignment</Button>
-        
+                        Add Assignment
+                    </Button>
+
                     <Button component={Link} to={{pathname:'/'}} 
                     variant="outlined" color="primary" style={{margin: 10}}>
                     Cancel</Button>
